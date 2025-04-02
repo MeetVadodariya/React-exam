@@ -1,0 +1,114 @@
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #494646;
+    color: white;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 4px;
+    width: 40%;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    flex: 1;
+}
+
+.search-btn {
+    background-color: #ff9f00;
+    border: none;
+    color: white;
+}
+
+.search-icon {
+    color: gray;
+    margin-right: 5px;
+}
+
+/* Header Options */
+.header-options {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.option button {
+    background-color: #fff;
+    color: #2874f0;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.option button:hover {
+    background-color: #4e4848;
+}
+
+/* Add Product Button */
+nav a {
+    background-color: #ff5722;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #e64a19;
+}
+
+/* Cart */
+.cart-btn {
+    position: relative;
+}
+
+.cart-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Search Results */
+.mt-3 {
+    padding: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,95 @@
+.login-container {
+    max-width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: #e2d4d4;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-container h2 {
+    color: #333;
+    margin-bottom: 60px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Sign In Button */
+.btn-signin {
+    width: 100%;
+    background-color: #2874f0;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-signin:hover {
+    background-color: #1a5bb8;
+}
+
+/* Google Login Button */
+.btn-google {
+    width: 100%;
+    background-color: #db4437;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.btn-google:hover {
+    background-color: #c1351d;
+}
+
+/* Google Icon */
+.google-icon {
+    font-size: 18px;
+}
+
+/* Register Link */
+.login-container p {
+    margin-top: 35px;
+    font-size: 14px;
+}
+
+p a {
+    color: #2874f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
