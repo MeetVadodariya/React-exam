@@ -6,7 +6,6 @@ import Header from "./Components/Header";
 import AddProduct from "./Components/AddProduct";
 import EditProduct from "./Components/EditProduct";
 import { Route, Routes } from "react-router";
-import Footer from "./Components/Footer";
 import ViewProduct from "./Components/ViewProducts";
 import Register from "./Components/Register";
 import Login from "./Components/Login";
@@ -14,7 +13,6 @@ import Cart from "./Components/Cart";
 import { onAuthStateChanged } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { loginSuc } from "./Servise/action/auth.action";
-import Categories from "./Components/Categories";
 import { auth } from "./FirebaseConfig";
 import { fetchCartFromFirebase } from "./Servise/action/cart.action";
 
@@ -62,7 +60,6 @@ function App() {
         <Route path="/edit/:id" element={<EditProduct />} />
         <Route path="/view/:id" element={<ViewProduct />} />
       </Routes>
-      {/* <Footer /> */}
     </>
   );
 }

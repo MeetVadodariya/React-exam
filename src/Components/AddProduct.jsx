@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { AddProductAsync } from "../Servise/action/product.action";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import "../Components/AddProduct.css";
 
 const AddProduct = () => {
     const dispatch = useDispatch();
@@ -30,10 +31,6 @@ const AddProduct = () => {
         } else if (isNaN(inputData.product_price)) {
             errors.product_price = "Product Price must be a number";
         }
-        // if (!inputData.product_description.trim()) {
-        //     errors.product_description = "Product Description is required";
-        // }
-        
         if (!inputData.product_image.trim()) {
             errors.product_image = "Product Image URL is required";
         } else if (!inputData.product_image.match) {
@@ -69,7 +66,7 @@ const AddProduct = () => {
       }, [isCreated, navigate, dispatch]);
       
     return (
-        <Container className="mt-3 add-container">
+        <div className="mt-3 add-container">
             <h2 className="mb-4 add-data">Add Product</h2>
             <Form onSubmit={handleSubmit} className="form-group-field">
                 <Form.Group as={Row} className="mb-3">
@@ -99,9 +96,6 @@ const AddProduct = () => {
                         {errors.product_price && <small className="text-danger">{errors.product_price}</small>}
                     </Col>
                 </Form.Group>
-
-               
-                
 
                 <Form.Group as={Row} className="mb-3">
                     <Form.Label column sm="2">Product Image URL</Form.Label>
@@ -143,7 +137,7 @@ const AddProduct = () => {
 
                 <Button className="add-button" variant="success" type="submit">Add Product</Button>
             </Form>
-        </Container>
+        </div>
     );
 };
 

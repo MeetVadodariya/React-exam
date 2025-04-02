@@ -3,6 +3,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getProductAsync } from "../Servise/action/product.action";
 import { Button } from "react-bootstrap";
+import "../Components/ViewProducts.css";
+
 
 const ViewProduct = () => {
   const { id } = useParams();

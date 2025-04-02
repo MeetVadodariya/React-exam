@@ -1,0 +1,104 @@
+.view-product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    min-height: 80vh;
+    margin-left: 50px;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f3f6;
+  }
+  
+  .view-product-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .product-card {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 750px;
+    height: auto;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-image-container {
+    flex: 1;
+    background: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-image-container img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .product-info {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+  }
+  
+  .product-info h2 {
+    font-size: 26px;
+    color: #212121;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .product-info h3 {
+    font-size: 22px;
+    color: #388e3c;
+    margin-bottom: 15px;
+  }
+  
+  .product-info p {
+    font-size: 16px;
+    color: #616161;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .product-info p strong {
+    font-size: 14px;
+    color: #212121;
+    text-transform: uppercase;
+  }
+  
+  .back-btn {
+    max-width: 120px;
+    margin-top: 20px;
+    background: #2874f0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .back-btn:hover {
+    background: #1a5ec6;
+  }
+  

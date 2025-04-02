@@ -96,7 +96,7 @@ const Home = () => {
                           <FaTrash />
                         </Button>
                         <Button
-                          className="card-btn cart-btn ms-2"
+                          className="card-btn1 cart-btn ms-2"
                           onClick={() => dispatch(addToCart(product))}
                           variant="warning"
                         >

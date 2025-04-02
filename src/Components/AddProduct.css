@@ -1,0 +1,95 @@
+/* Add Product Page - Glassmorphism Style */
+.add-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.2);  /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Glass effect */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.add-container:hover {
+    transform: scale(1.03);
+}
+
+.add-data {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Form Styling */
+.form-group-field {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels */
+.form-group-field label {
+    font-weight: 600;
+    color: #333;
+    width: 180px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Input Fields */
+.form-control, .form-select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Add Button */
+.add-button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.add-button:hover {
+    background: linear-gradient(135deg, #0056b3, #004191);
+    transform: scale(1.05);
+}
+
+/* Error Messages */
+.text-danger {
+    font-size: 14px;
+    color: #ff4d4d;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .form-group-field {
+        flex-direction: column;
+    }
+}

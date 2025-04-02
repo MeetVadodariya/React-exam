@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { getProductAsync, updateProductAsync } from "../Servise/action/product.action";
+import "../Components/EditProduct.css";
 
 const EditProduct = () => {
     const { id } = useParams();
@@ -53,7 +54,7 @@ const EditProduct = () => {
     }, [product]);
 
     return (
-        <Container className="mt-3 edit-container">
+        <div className="mt-3 edit-container">
             <h2 className="mb-4 edit-data">Edit Product</h2>
             <Form className="form-group-field" onSubmit={handleSubmit}>
                 <Form.Group as={Row} className="mb-3">
@@ -67,19 +68,6 @@ const EditProduct = () => {
                     <Form.Label column sm="2">Product Price</Form.Label>
                     <Col sm="6">
                         <Form.Control type="text" name="product_price" value={inputData.product_price} onChange={handleChanged} placeholder="Enter Product Price" />
-                    </Col>
-                </Form.Group>
-
-                <Form.Group as={Row} className="mb-3">
-                    <Form.Label column sm="2">Product Description</Form.Label>
-                    <Col sm="6">
-                        <Form.Control
-                            name="product_description"
-                            value={inputData.product_description}
-                            onChange={handleChanged}
-                            type="text"
-                            placeholder="Enter Product Description"
-                        />
                     </Col>
                 </Form.Group>
 
@@ -127,10 +115,10 @@ const EditProduct = () => {
                 <Button className="" onClick={handleChange}>
                 Go Back
               </Button>
-                <Button className="edit-button" variant="success" type="submit">Edit Product</Button>
+                <Button className="edit-button ms-5" variant="success" type="submit">Edit Product</Button>
                 </div>
             </Form>
-        </Container>
+        </div>
     );
 };
 
